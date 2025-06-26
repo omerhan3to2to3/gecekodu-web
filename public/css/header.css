@@ -1,0 +1,28 @@
+.header{
+    margin-top: 70px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.header img{
+    width: 100%;
+    object-fit: cover;
+}
+.header h1, .header h3{
+    position: absolute;
+
+}
+.header h1{
+    top: 60px;
+    font-family: "Audiowide", sans-serif;
+    font-size:150px;
+    color: rgb(35, 35, 77)    
+}
+.header h3{
+    top: 260px;
+    font-family: "Orbitron", sans-serif;
+    font-size: xx-large;
+    color:rgb(5, 50, 102)
+
+}
