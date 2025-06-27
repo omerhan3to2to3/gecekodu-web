@@ -4,25 +4,97 @@
     position: relative;
     display: flex;
     justify-content: center;
+    min-height: 600px;
 }
 .header img{
     width: 100%;
+    height: 1600px;
     object-fit: cover;
 }
 .header h1, .header h3{
     position: absolute;
-
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
 }
 .header h1{
-    top: 60px;
+    top: 100px;
     font-family: "Audiowide", sans-serif;
-    font-size:150px;
-    color: rgb(35, 35, 77)    
+    font-size: 150px;
+    color: rgb(35, 35, 77);
+    line-height: 1.2;
 }
 .header h3{
-    top: 260px;
+    top: 350px;
     font-family: "Orbitron", sans-serif;
     font-size: xx-large;
-    color:rgb(5, 50, 102)
+    color: rgb(5, 50, 102);
+    line-height: 1.2;
+}
 
+/* Tablet responsive */
+@media (max-width: 768px) {
+    .header {
+        margin-top: 60px;
+        min-height: 450px;
+    }
+    
+    .header img {
+        height: 450px;
+    }
+    
+    .header h1 {
+        font-size: 80px;
+        top: 60px;
+    }
+    
+    .header h3 {
+        font-size: 24px;
+        top: 220px;
+    }
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .header {
+        margin-top: 60px;
+        min-height: 350px;
+    }
+    
+    .header img {
+        height: 350px;
+    }
+    
+    .header h1 {
+        font-size: 50px;
+        top: 40px;
+        padding: 0 10px;
+    }
+    
+    .header h3 {
+        font-size: 18px;
+        top: 160px;
+        padding: 0 10px;
+    }
+}
+
+/* Small mobile responsive */
+@media (max-width: 320px) {
+    .header {
+        min-height: 300px;
+    }
+    
+    .header img {
+        height: 300px;
+    }
+    
+    .header h1 {
+        font-size: 40px;
+        top: 30px;
+    }
+    
+    .header h3 {
+        font-size: 16px;
+        top: 140px;
+    }
 }
