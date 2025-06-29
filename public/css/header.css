@@ -4,11 +4,11 @@
     position: relative;
     display: flex;
     justify-content: center;
-    min-height: 600px;
+    min-height: 3200px;
 }
 .header img{
     width: 100%;
-    height: 1600px;
+    height: 3200px;
     object-fit: cover;
 }
 .header h1, .header h3{
@@ -36,11 +36,11 @@
 @media (max-width: 768px) {
     .header {
         margin-top: 60px;
-        min-height: 450px;
+        min-height: 2800px;
     }
     
     .header img {
-        height: 450px;
+        height: 2800px;
     }
     
     .header h1 {
@@ -58,11 +58,11 @@
 @media (max-width: 480px) {
     .header {
         margin-top: 60px;
-        min-height: 350px;
+        min-height: 2600px;
     }
     
     .header img {
-        height: 350px;
+        height: 2600px;
     }
     
     .header h1 {
@@ -81,11 +81,11 @@
 /* Small mobile responsive */
 @media (max-width: 320px) {
     .header {
-        min-height: 300px;
+        min-height: 2400px;
     }
     
     .header img {
-        height: 300px;
+        height: 2400px;
     }
     
     .header h1 {

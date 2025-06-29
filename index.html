@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="topBar">
-    <div class = "wrapper">
+    <div class="wrapper">
         <div class="left">
             <a href="https://x.com/SkyLabKulubu" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-square-x-twitter"></i>
@@ -25,9 +25,9 @@
             </a>
         </div>
         <div class="center">
-            <a href="/">HOME</a>
-            <a href="/events">EVENTS</a>
-            <a href="/team">TEAM</a>
+            <a href="/" id="homeLink">HOME</a>
+            <a href="#cities" id="eventsLink">EVENTS</a>
+            <a href="#team" id="teamLink">TEAM</a>
             <a href="/apply">APPLY</a>
             <a href="/contactUs">CONTACT US</a>
         </div>
@@ -51,9 +51,9 @@
 
 <!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
-    <a href="/">HOME</a>
-    <a href="/events">EVENTS</a>
-    <a href="/team">TEAM</a>
+    <a href="/" id="homeLinkMobile">HOME</a>
+    <a href="#cities" id="eventsLinkMobile">EVENTS</a>
+    <a href="#team" id="teamLinkMobile">TEAM</a>
     <a href="/apply">APPLY</a>
     <a href="/contactUs">CONTACT US</a>
 </div>
@@ -64,25 +64,145 @@
     <h3>Laptop'unu kap gel</h3>
 </header>
 
-<script>
-// Mobile menu toggle
-document.querySelector('.hamburger').addEventListener('click', function() {
-    const mobileMenu = document.getElementById('mobileMenu');
-    mobileMenu.classList.toggle('active');
-    this.classList.toggle('active');
-});
+<section class="cities-section" id="cities">
+    <div class="cities-container">
+        <a href="https://forms.office.com/pages/responsepage.aspx?id=CClghVvhukORSDi8dzqBbo7p7UNrw4dGn2QLKKVhM5VUQlVJTjJLUFNYSE45MFFVWjhYOUpVMTdORCQlQCNjPTEu&route=shorturl" class="city-box" target="_blank" rel="noopener noreferrer">
+            <h2>İSTANBUL</h2>
+            <div class="city-description">
+                <p>Cuma günleri akşam 7den cumartesi sabah 7ye kadar bilgisayar bilimleri üzerine bireysel veya ekip halinde çalışmalar gerçekleştirdiğimiz bir etkinliktir.</p>
+            </div>
+        </a>
+        <a href="/eskisehir" class="city-box" target="_blank" rel="noopener noreferrer">
+            <h2>ESKİŞEHİR</h2>
+            <div class="city-description">
+                <p>Cuma günleri akşam 7den cumartesi sabah 7ye kadar bilgisayar bilimleri üzerine bireysel veya ekip halinde çalışmalar gerçekleştirdiğimiz bir etkinliktir.</p>
+            </div>
+        </a>
+        <a href="/ankara" class="city-box" target="_blank" rel="noopener noreferrer">
+            <h2>ANKARA</h2>
+            <div class="city-description">
+                <p>Cuma günleri akşam 7den cumartesi sabah 7ye kadar bilgisayar bilimleri üzerine bireysel veya ekip halinde çalışmalar gerçekleştirdiğimiz bir etkinliktir.</p>
+            </div>
+        </a>
+        <a href="/malatya" class="city-box" target="_blank" rel="noopener noreferrer">
+            <h2>MALATYA</h2>
+            <div class="city-description">
+                <p>Cuma günleri akşam 7den cumartesi sabah 7ye kadar bilgisayar bilimleri üzerine bireysel veya ekip halinde çalışmalar gerçekleştirdiğimiz bir etkinliktir.</p>
+            </div>
+        </a>
+    </div>
+</section>
 
-// Close mobile menu when clicking outside
-document.addEventListener('click', function(event) {
-    const hamburger = document.querySelector('.hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    
-    if (!hamburger.contains(event.target) && !mobileMenu.contains(event.target)) {
-        mobileMenu.classList.remove('active');
-        hamburger.classList.remove('active');
-    }
-});
-</script>
+<section class="team-section" id="team">
+    <div class="team-container">
+        <h2 class="team-title">EKİBİMİZ</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="public/img/team/member1.jpg" alt="Takım Üyesi 1" class="member-photo">
+                <div class="member-info">
+                    <h3 class="member-name">Şevval Çabuk</h3>
+                    <p class="member-department">Bilgisayar Mühendisliği</p>
+                    <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <img src="public/img/team/member2.jpg" alt="Takım Üyesi 2" class="member-photo">
+                <div class="member-info">
+                    <h3 class="member-name">Ömerhan Sancak</h3>
+                    <p class="member-department">Bilgisayar Mühendisliği</p>
+                    <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <img src="public/img/team/member3.jpg" alt="Takım Üyesi 3" class="member-photo">
+                <div class="member-info">
+                    <h3 class="member-name">Hakan Demir</h3>
+                    <p class="member-department">Bilgisayar Mühendisliği</p>
+                    <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <img src="public/img/team/member4.jpg" alt="Takım Üyesi 4" class="member-photo">
+                <div class="member-info">
+                    <h3 class="member-name">Furkan Vural</h3>
+                    <p class="member-department">Bilgisayar Mühendisliği</p>
+                    <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <img src="public/img/team/member5.jpg" alt="Takım Üyesi 5" class="member-photo">
+                <div class="member-info">
+                    <h3 class="member-name">Buse Tavlak</h3>
+                    <p class="member-department">Bilgisayar Mühendisliği</p>
+                    <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <img src="public/img/team/member6.jpg" alt="Takım Üyesi 6" class="member-photo">
+                <div class="member-info">
+                    <h3 class="member-name">Ahmed Efe Pıttık</h3>
+                    <p class="member-department">Malzeme ve Metalurji Mühendisliği</p>
+                    <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <img src="public/img/team/member7.jpg" alt="Takım Üyesi 7" class="member-photo">
+                <div class="member-info">
+                    <h3 class="member-name">Yusuf Açmacı</h3>
+                    <p class="member-department">Matematik Mühendisliği</p>
+                    <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <img src="public/img/team/member8.jpg" alt="Takım Üyesi 8" class="member-photo">
+                <div class="member-info">
+                    <h3 class="member-name">Rojhat Uğuş</h3>
+                    <p class="member-department">Bilgisayar Mühendisliği</p>
+                    <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <img src="public/img/team/member9.jpg" alt="Takım Üyesi 9" class="member-photo">
+                <div class="member-info">
+                    <h3 class="member-name">Semih Yıldırım</h3>
+                    <p class="member-department">Bilgisayar Mühendisliği</p>
+                    <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript dosyaları -->
+<script src="public/js/topbar-scroll.js"></script>
+<script src="public/js/mobile-menu.js"></script>
+<script src="public/js/main.js"></script>
 
 </body>
 </html>
